@@ -1,0 +1,28 @@
+<p>tutorial works!</p>
+
+<p *ngFor="let item of product">
+    {{item.name}}
+    {{item .description}}
+</p>
+<p>tutorials works!</p>
+<fieldset>
+    <legend>List of books </legend>
+    <ul>
+        <table>
+            <li *ngFor="let books of tutorial">
+                <tr>
+                    <!-- <td>{{books.id}}</td> -->
+                    <!-- <td><a href="">{{books.language}}</a></td> -->
+                    <!-- <td>{{books.edition}}</td> -->
+                    <!-- <td>{{books.author}}</td> -->
+
+                    <!-- <td>{{books.id}}</td> -->
+                    <td><a [routerLink]="['book',books.id]">{{books.id}} </a> </td>
+                </tr>
+
+            </li>
+        </table>
+    </ul>
+
+    <router-outlet></router-outlet>
+</fieldset>

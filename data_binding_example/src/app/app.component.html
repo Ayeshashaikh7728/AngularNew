@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <app-ng-for-example></app-ng-for-example>
+    <h1>Root Component</h1>
+    <table>
+        <tr>
+            <td>Enter first name</td>
+            <td> <input type="text" [(ngModel)]="fName"></td>
+        </tr>
+        <tr>
+            <td>Enter last name</td>
+            <td> <input type="text" [(ngModel)]="lName"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Name is {{fName}} {{lName}}</td>
+        </tr>
+        <tr>
+            <td><button  (click)="showdetails()"> click</button></td>
+        <td><input type="button" (click)="showdetails()" value="clickme"></td>
+    </table>
+
+    <div>
+      <h3>This is a Attribute Directives</h3>
+      <span [class.red]="true">Attribute Change</span><br />
+      <span [ngClass]="{'blue':true}">Attribute Change by Using NgClass</span><br />
+      <span [ngStyle]="{'font-size':'14px','color':'green'}">Attribute Change by Using NgStyle</span>
+      <br /><br />
+
+
+      <span [class.cyan]="showColor">Attribute Change</span><br />
+      <span [ngClass]="{'brown':showColor}">Attribute Change by Using NgClass</span><br />
+
+      <span [class.cyan]="showColor">Attribute Change</span><br />
+      <span [ngClass]="{'cyan':showColor, 'red' : !showColor}">Attribute Change by Using NgClass</span><br />
+      <input type="button" value="Change Color" (click)="changeColor()" />
+      <br /><br />
+
+      <div *ngIf="showInfo">This information based on the button click.</div>
+    <button (click)="showInfoButton()">{{caption}}</button>
+
+      <br />
+  </div>
+  <div appMyRed>This is Example of Custom Directive </div>
+
+    <p appMyRed>This is Para</p>
+    <h1 appMyRed>h1 tag</h1>
+    <div appMyRed myColor="blue">This is Example of Custom Directive </div>
+
+    <p appMyRed myColor="red">This is Para</p>
+
+</body>
+
+</html>

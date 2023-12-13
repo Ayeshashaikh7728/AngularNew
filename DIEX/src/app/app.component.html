@@ -1,0 +1,16 @@
+<form (submit)="logMessage($event, userInput.value)">
+  <input #userInput placeholder="Type a message...">
+  <button type="submit">SUBMIT</button>
+</form>
+
+<h3>Delete Logged Messages</h3>
+<button type="button" (click)="clearLog()">CLEAR</button>
+<H1>{{stringvar}}</H1>
+
+<ul>
+  <li *ngFor="let stud of student">
+    {{stud.id}}
+    {{stud.name}}
+    {{stud.age}}
+  </li>
+</ul>

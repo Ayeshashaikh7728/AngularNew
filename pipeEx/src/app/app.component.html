@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <H1>{{ 10 | power : 2 : 20}}</H1>
+  <app-power-boost-calculator-component></app-power-boost-calculator-component>
+  <app-filter-example></app-filter-example> 
+  <!-- <app-time-format></app-time-format>
+  <app-filter-example></app-filter-example> 
+  <app-number-component></app-number-component> -->
+
+  <!-- <h1>pipe examaple {{title|uppercase}}</h1>
+  <h1> {{var1|lowercase}}</h1>
+  <fieldset>
+    <legend> Currency Pipe</legend>
+    <p ngNonBindable>{{ amount| currency:'CAD' }}</p>
+    <p>{{amount | currency:"CAD" }}</p>
+
+    <p ngNonBindable>{{amount| currency:'CAD':'code' }}</p>
+    <p>{{ amount | currency:'CAD':'code'}}</p>
+
+    <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol' }}</p>
+    <p>{{ amount | currency:'CAD':'symbol'}}</p>
+
+    <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol-narrow' }}</p>
+    <p>{{ amount | currency:'CAD':'symbol-narrow'}}</p>
+
+
+    <p ngNonBindable>{{ 1234.56 | currency:'Rs.' }}</p>
+    <p>{{ amount | currency:'Rs.'}}</p>
+    <p ngNonBindable>{{ 1234.56 | currency:'INR':'symbol' }}</p>
+    <p>{{123.56|currency:"INR"}}</p>
+</fieldset>
+
+
+
+<fieldset>
+  <legend>Date pipe</legend>
+  <p ngNonBindable>{{ birthday | date: 'shortTime' }}</p> 
+  <p>{{ birthday | date: 'shortTime' }}</p>
+
+  <p ngNonBindable>{{ birthday | date:'fullDate' }}</p>
+  <p>{{ birthday | date: 'fullDate' }}</p>
+
+  <p ngNonBindable>{{ birthday | date: 'd/M/y' }}</p>
+  <p>{{ birthday | date: 'd/M/y' }}</p>
+
+</fieldset>
+
+
+<fieldset>
+  <legend>Decimal Pipe</legend>
+
+  <p ngNonBindable>{{ 3.14159265 | number: '3.1-2' }}</p>
+  <p>{{ 3.14159265 | number: '3.1-2' }}</p>
+
+  <p ngNonBindable>{{ 3.14159265 | number: '1.4-4' }}</p>
+  <p>{{ 3.14159265 | number: '1.4-4' }}</p>
+  <p ngNonBindable>{{ 2.5 | number: '2-5' }}</p>
+  <p>{{ 2.5 | number: '1.6-5' }}</p>
+  <P>{{ 2.5 | number: "1.6-5" }}</P>
+
+
+</fieldset>
+
+
+<fieldset>
+  <legend>Document</legend>
+  <h1>Json Pipe</h1>
+  <b>{{ jsonval | json }}</b>
+  <h1>Percent Pipe</h1>
+  <b>{{00.54565 | percent}}</b>
+  <h1>Slice Pipe</h1>
+  <b>{{months | slice:2:6}}</b>
+</fieldset> -->
+
+<!-- <app-number-component></app-number-component> -->
+<p>{{var1| reverseStr:"abc":"pqr"}}</p>
+
+<fieldset>
+  <legend>JSON PIPE</legend>
+  {{obj|json}}
+  <pre>{{obj|json}}</pre>
+</fieldset>
+</body>
+</html>
