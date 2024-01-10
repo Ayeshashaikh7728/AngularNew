@@ -1,0 +1,51 @@
+/* Add your styles here */
+*{
+    color: white;
+}
+fieldset{
+    align-items: center;
+    margin-top: 0cm;
+    
+}
+h2 {
+    color: #333333d2;
+  }
+  
+  div {
+    margin-bottom: 10px;
+    
+    align-items: center;
+    background:rgb(13, 0, 0);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    /* margin-left: 5px;
+    background-color: rgb(0, 234, 255);
+    cursor: pointer; */
+    background-color: #04AA6D; /* Green */
+    border:double ;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  label {
+    margin-right: 5px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  

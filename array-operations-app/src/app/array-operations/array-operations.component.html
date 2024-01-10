@@ -1,0 +1,29 @@
+<p>array-operations works!</p>
+<p style="color: black;">Name:Ayesha Shaikh</p>
+<div>
+    <h2 style="color: rgb(139, 252, 0);">Array Operations:</h2>
+  <fieldset >
+    <div >
+      <label for="newItem">Enter the New Item:</label>
+      <input [(ngModel)]="newItem" id="newItem" placeholder="Enter the item" style="color: black;"/>
+      <button (click)="addItem()" style="background-color: greenyellow; color:black;">Add Item</button>
+    </div>
+  
+    <ul>
+      <li *ngFor="let item of array; let i = index">
+        {{ item }}
+        <button (click)="deleteItem(i)" style="background-color: red;">Delete</button>
+        <button (click)="updateIndex = i; updatedItem = item">Update</button>
+      </li>
+    </ul>
+  
+    <div *ngIf="updateIndex >= 0">
+      <label for="updatedItem">Updated Item:</label>
+      <input [(ngModel)]="updatedItem" id="updatedItem" style="color: black;"/>
+      <p></p>
+      <button (click)="updateItem()">Update</button>
+      <!-- <p>previous item {{newItem}}</p>
+      <p>{{updateItem}}</p> -->
+    </div>
+</fieldset>
+  </div>
