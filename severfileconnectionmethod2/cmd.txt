@@ -1,0 +1,6 @@
+npm init
+(create package)
+npm install 
+(create node module)
+then create js file and run this file using
+node filename.js

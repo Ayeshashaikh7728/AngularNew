@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router,ActivatedRoute } from '@angular/router';
-import * as ebooks from 'src/Model1/ebook.json';
+import * as ebooks from 'src/Model1/ebook9o0u .json';
 
 @Component({
   selector: 'app-book',

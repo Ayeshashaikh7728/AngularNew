@@ -1,0 +1,39 @@
+<!-- app.component.html -->
+<div>
+  <h1>Employee Management</h1>
+
+  <!-- Insert Form -->
+  <form (ngSubmit)="addEmployee()" #insertForm="ngForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="newEmployee.name" name="name" required>
+
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" [(ngModel)]="newEmployee.salary" name="salary" required>
+
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <!-- Employee List -->
+  <ul>
+    <li *ngFor="let employee of employees">
+      {{ employee.id }} - {{ employee.name }} - {{ employee.salary }}
+      <button (click)="editEmployee(employee)">Edit</button>
+      <button (click)="deleteEmployee(employee.id)">Delete</button>
+    </li>
+  </ul>
+
+  <!-- Update Form -->
+  <div *ngIf="editing">
+    <h2>Edit Employee</h2>
+    <form (ngSubmit)="updateEmployee()" #editForm="ngForm">
+      <label for="editName">Name:</label>
+      <input type="text" id="editName" [(ngModel)]="selectedEmployee.name" name="editName" required>
+
+      <label for="editSalary">Salary:</label>
+      <input type="number" id="editSalary" [(ngModel)]="selectedEmployee.salary" name="editSalary" required>
+
+      <button type="submit">Update</button>
+      <button (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+</div>
